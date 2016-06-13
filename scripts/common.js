@@ -16,16 +16,13 @@ $(document).ready(function() {
     }
 
     $('#job-carousel').jcarousel({
-        animation: 'slow',
+        animation: 300,
         visible: 9,
-        scroll: 1,
         wrap: 'circular'
     });
 
     $(' .sliderjob .btn-prev').click(function() {
-        $('#job-carousel ul').animate({
-            left: '+=' + width
-        }, 200);
+       $('#job-carousel').jcarousel('scroll', '-=1');
     });
 
     $('.sliderjob .btn-next').click(function() {

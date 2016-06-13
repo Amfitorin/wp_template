@@ -75,7 +75,7 @@ nav li {
 	margin-top: 32px;
 }
 
-nav li a {
+nav li a, .nav li a {
 	font-size: 21px;
 	color: #5b646d;
 	font-weight: 400;
@@ -94,13 +94,15 @@ nav li a::before {
 }
 
 nav li:hover a,
-nav li a.active {
+nav li a.active,
+.nav li:hover a,
+.nav li a.active  {
 	text-decoration: none;
 	color: #2ca7de;
 }
 
 nav li:hover a::before,
-nav li a.active::before {
+nav li a.active::before, {
 	background-color: #2ca7de;
 }
 
@@ -110,26 +112,26 @@ nav li a.active::before {
 	margin-top: 20px;
 }
 
-header .services {
+.services {
 	margin-top: 9px;
 	font-size: 16px;
 }
 
-header .services div {
+.services div {
 	float: left;
 }
 
-header .services ul {
+.services ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-header .services div+div {
+.services div+div {
 	margin-left: 12.9%;
 }
 
-header .services ul li {
+.services ul li {
 	color: #2ca7de;
 }
 
@@ -419,7 +421,7 @@ section {
 }
 
 .advantage .advantage-wrapper .wrap:nth-child(7) .advant img {
-		object-position: -578px 19px;
+	object-position: -578px 19px;
 	width: 110px;
 }
 
@@ -476,6 +478,9 @@ section {
 	position: absolute;
 	top: 130px;
 }
+.btn-next:hover, .btn-prev:hover{
+	transform: scale(1.1,1.1);
+}
 .btn-next {
 	right: 120px;
 }
@@ -487,4 +492,83 @@ section {
 }
 .btn-prev img{
 	object-position: -40px 0px;
+}
+
+/********************         VIDEO          ***************************/
+.video{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.video-wrapper{
+	display: inline-block;
+	width: 33%;
+}
+.video-wrapper p{
+	font-family: 'PT Sans Narrow Bold';
+	margin-bottom: 5px;
+	color: #8a8a8a;
+}
+.video-wrapper .job{
+	font-style: italic;
+	margin-top: 0;
+}
+.video-wrapper iframe{
+	width: 99%;
+	height: 250px;
+}
+
+
+/********************         FOOTER          ***************************/
+
+footer{
+	background: url('../img/footer_bg.jpg') no-repeat center top;
+	border-top: 1px solid transparent;
+}
+
+footer h2{
+	color: #fff;
+	white-space: pre;
+	font-size: 60px;
+	border-bottom: 1px solid transparent;
+	margin-bottom: 50px;
+}
+
+
+.service_wrap{
+	width: 55%;
+	float: left;
+}
+.nav{
+	width: 15%;
+	float: left;
+	list-style: none;
+}
+.nav li a{
+	font-size: 18px;
+}
+.social{
+	width: 100px;
+	text-align: center;
+	float: left;
+	margin-right: 5%;
+}
+.social .sbutton{
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	background-color: #2ca7de;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.copyr{
+	width: 15%;
+
+	float: left;
+}
+.copyr p{
+		color: #8a8a8a;
+		line-height: 13px;
+		margin-bottom: 10px;
+		margin-top: 5px;
 }
