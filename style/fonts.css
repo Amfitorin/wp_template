@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Open Sans Light';
+    src: local('Open Sans Light'), local('../fonts/opensans/opensans-Light'), url('../fonts/opensans/opensanslight.woff2') format('woff2'), url('../fonts/opensans/opensanslight.woff') format('woff'), url('../fonts/opensans/opensanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: local('PT Sans Narrow'), local('PTSans-Narrow'), url('../fonts/ptsansnarrow/ptsansnarrow.woff2') format('woff2'), url('../fonts/ptsansnarrow/ptsansnarrow.woff') format('woff'), url('../fonts/ptsansnarrow/ptsansnarrow.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow Bold';
+    src: local('PT Sans Narrow Bold'), local('PTSans-NarrowBold'), url('../fonts/ptsansnarrow/ptsansnarrowbold.woff2') format('woff2'), url('../fonts/ptsansnarrow/ptsansnarrowbold.woff') format('woff'), url('../fonts/ptsansnarrow/ptsansnarrowbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
